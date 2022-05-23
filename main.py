@@ -3,13 +3,13 @@ from datetime import datetime
 from requests.auth import HTTPBasicAuth
 import os
 
-GENDER = "M"
-WEIGHT_KG = 92.2
-HEIGHT_CM = 185
-AGE = 32
+GENDER = your_age
+WEIGHT_KG = your_age
+HEIGHT_CM = your_age
+AGE = your_age
 
-APP_ID = "8bb7b5d2"
-API_KEY = "20e5ede1ed35e74d0b8f8a4e2d70ee58"
+APP_ID = "your_ID"
+API_KEY = "your_KEY"
 
 # BEARER_TOKEN = "Bearer iojawdioj123!"
 
@@ -55,7 +55,7 @@ for exercise in result["exercises"]:
     # print(sheet_response.text)
 
     bearer_headers = {
-        "Authorization": "Bearer iojawdioj123!"
+        "Authorization": "Bearer your_bearID!"
     }
     sheet_response = requests.post(
         url=sheety_endpoint,
